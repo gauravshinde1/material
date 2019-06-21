@@ -10,12 +10,12 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-          <Switch>
+          
             <Route exact path='/' component={Login} />
             <Route path='/dashboard' component={MainDashBoard}/>
             <Route path='/edit' component={ViewOrganisation}/>
             <Route component={Default}/>
-          </Switch>
+        
       </Router>
     </React.Fragment>
   );
