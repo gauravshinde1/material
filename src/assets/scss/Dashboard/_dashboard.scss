@@ -1,0 +1,46 @@
+/*** ====================
+    Dashboard Css
+==================== ***/
+
+/*** ====== Large Text Css ====== ***/
+.large-text{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    padding-left: 0;
+    margin-top: vw(20px);
+    height: vw(50px);
+
+    h4{
+        font-style: normal;
+        font-weight: 300;
+        font-size: vw(35px);
+        color: #F44336;
+    }
+}
+
+/*** ====== Small Text Css ====== ***/
+table{
+    
+    margin-bottom: 0px !important;
+
+    .tabledata-bold{
+        padding-left: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: vw(18px);
+        color: #000;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    }
+
+    .tabledata-light{
+        padding-left: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: vw(18px);
+        color: #000;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    }
+}

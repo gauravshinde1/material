@@ -1,0 +1,31 @@
+/********************
+    Navigation Css
+********************/
+.header-main{
+    width: 94%;
+    border-bottom: 1px solid #000;
+
+    .divheading{
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img{
+        width: vw(200px);
+        height: vw(85px);
+    }
+
+    .header-anchor{
+        color: #000;
+        text-decoration: none;
+    }
+
+    .h4{
+        font-style: normal;
+        font-weight: normal;
+        font-size: vw(40px);
+        color: #000000;
+    }
+}

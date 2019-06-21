@@ -1,33 +1,253 @@
-.App {
-  text-align: center;
+/********************
+    Function Css
+********************/
+/********************
+    Global Css
+********************/
+/***********************************
+            Global Reset             
+***********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #F1F1F1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*** font family class ***/
+.text-robot {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** All Pages Padding ***/
+.main-padding {
+  width: 94%;
+  padding: 0;
+}
+
+/*** input field class ***/
+.input-bottomblack {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 0;
+  padding-left: 0;
+  background: transparent;
+}
+
+.input-bottomblack:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.input-bottomgray {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0;
+  padding-left: 0;
+  background: transparent;
+}
+
+.input-bottomgray:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*** Button Classes ***/
+.leftblack-button {
+  font-size: 1.04167vw;
+  color: #424242;
+  background: transparent;
+  border: none;
+  float: left;
+  padding-left: 0;
+  margin-top: 1.04167vw;
+}
+
+.leftblack-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.leftsmall-button {
+  font-size: 1.04167vw;
+  color: #F44336;
+  background: transparent;
+  border: none;
+  float: left;
+  padding-left: 0;
+  margin-top: 1.04167vw;
+}
+
+.leftsmall-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.rightsmall-button {
+  font-size: 1.04167vw;
+  color: #F44336;
+  background: transparent;
+  border: none;
+  float: right;
+  margin-top: 1.04167vw;
+}
+
+.rightsmall-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/********************
+    Typography Css
+********************/
+/********************
+    Navigation Css
+********************/
+.header-main {
+  width: 94%;
+  border-bottom: 1px solid #000;
+}
+
+.header-main .divheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header-main img {
+  width: 10.41667vw;
+  height: 4.42708vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-main .header-anchor {
+  color: #000;
+  text-decoration: none;
 }
+
+.header-main .h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.08333vw;
+  color: #000000;
+}
+
+/***=========================
+    Login Scss
+=========================***/
+.login-align {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.login-align img {
+  margin-bottom: 3.90625vw;
+}
+
+.login-align .forgot-button {
+  color: #F44336;
+  font-size: 0.83333vw;
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+}
+
+.login-align .forgot-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login-align .login-button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  border: none;
+  background-color: transparent;
+  padding-right: 0;
+  margin-top: 1.04167vw;
+  float: right;
+}
+
+.login-align .login-button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*** ====================
+    Dashboard Css
+==================== ***/
+/*** ====== Large Text Css ====== ***/
+.large-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  padding-left: 0;
+  margin-top: 1.04167vw;
+  height: 2.60417vw;
+}
+
+.large-text h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.82292vw;
+  color: #F44336;
+}
+
+/*** ====== Small Text Css ====== ***/
+table {
+  margin-bottom: 0px !important;
+}
+
+table .tabledata-bold {
+  padding-left: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+}
+
+table .tabledata-light {
+  padding-left: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9375vw;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+}
+/*# sourceMappingURL=App.css.map */

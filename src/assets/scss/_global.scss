@@ -1,0 +1,101 @@
+/********************
+    Global Css
+********************/
+/***********************************
+            Global Reset             
+***********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+body{
+    background: #F1F1F1;
+}
+/*** font family class ***/
+
+.text-robot{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*** All Pages Padding ***/
+.main-padding{
+    width: 94%;
+    padding: 0;
+}
+
+/*** input field class ***/
+
+.input-bottomblack{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    border-radius: 0;
+    padding-left: 0;
+    background: transparent;
+}
+.input-bottomblack:focus{
+    outline: none;
+    box-shadow: none;
+}
+.input-bottomgray{
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+    padding-left: 0;
+    background: transparent;
+}
+.input-bottomgray:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/*** Button Classes ***/
+.leftblack-button{
+    font-size: vw(20px);
+    color: #424242;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: vw(20px);
+}
+.leftblack-button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.leftsmall-button{
+    font-size: vw(20px);
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: vw(20px);
+}
+.leftsmall-button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.rightsmall-button{
+    font-size: vw(20px);
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: right;
+    margin-top: vw(20px);
+}
+.rightsmall-button:focus{
+    outline: none;
+    box-shadow: none;
+}
