@@ -12,8 +12,8 @@ function App() {
       <Router>
           <Switch>
             <Route exact path='/' component={Login} />
-            <Route exact path='/dashboard' component={MainDashBoard}/>
-            <Route exact path='/edit' component={ViewOrganisation}/>
+            <Route path='/dashboard' component={MainDashBoard}/>
+            <Route path='/edit' component={ViewOrganisation}/>
             <Route component={Default}/>
           </Switch>
       </Router>
