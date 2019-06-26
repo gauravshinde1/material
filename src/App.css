@@ -116,6 +116,12 @@ body {
           box-shadow: none;
 }
 
+/*** ============ validation css ============ ***/
+.is-invalid {
+  color: red;
+  font-size: 1.04167vw;
+}
+
 /********************
     Typography Css
 ********************/
@@ -249,5 +255,6 @@ table .tabledata-light {
   color: #000;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

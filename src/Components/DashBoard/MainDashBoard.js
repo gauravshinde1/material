@@ -7,7 +7,7 @@ export class MainDashBoard extends Component {
         return (
             <React.Fragment>
                 <div className="container-fluid">
-                    <div class="row">
+                    <div className="row">
                         <HeaderComponent headertext={'Curtis'} /> 
                         <AllDashComponent/>
                     </div>

@@ -10,8 +10,8 @@ const InputComponent = ({
 }) => {
     return (
         <React.Fragment>
-            <div class="form-group mb-0">
-                <input name={ name } value={ value } onChange={ onChange } type={type} className={inputclass} placeholder={place} />
+            <div className="form-group mb-0">
+                <input name={ name } value={ value } onChange={ onChange } type={type} className={inputclass} placeholder={place}/>
             </div>
         </React.Fragment>
     )

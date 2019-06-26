@@ -8,8 +8,12 @@ const ViewOrganisation = () => {
     return (
         <React.Fragment>
             <div className="container-fluid">
-                <div class="row">
+                <div className="row">
                     <HeaderComponent headertext={'Curtis'}/>
+                </div>
+            </div>
+            <div className="container-fluid main-padding">
+                <div className="row">
                     <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                         <EditView/>
                     </div>
@@ -19,7 +23,7 @@ const ViewOrganisation = () => {
                     <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                         <BillingView/>
                     </div>
-                </div>
+                </div>    
             </div>
         </React.Fragment>
     )
