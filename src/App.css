@@ -29,7 +29,7 @@ body {
 }
 
 /*** font family class ***/
-.text-robot {
+.text-roboto {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -68,58 +68,113 @@ body {
           box-shadow: none;
 }
 
-/*** Button Classes ***/
-.leftblack-button {
-  font-size: 1.04167vw;
-  color: #424242;
-  background: transparent;
-  border: none;
-  float: left;
-  padding-left: 0;
-  margin-top: 1.04167vw;
+/***===============
+    Button media
+===============***/
+@media screen and (min-width: 769px) {
+  /*** Button Classes ***/
+  .leftblack-button {
+    font-size: 1.04167vw;
+    color: #424242;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 1.04167vw;
+    cursor: pointer;
+  }
+  .leftblack-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .leftsmall-button {
+    font-size: 1.04167vw;
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 1.04167vw;
+    cursor: pointer;
+  }
+  .leftsmall-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .rightsmall-button {
+    font-size: 1.04167vw;
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: right;
+    margin-top: 1.04167vw;
+    cursor: pointer;
+  }
+  .rightsmall-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  /*** ============ validation css ============ ***/
+  .is-invalid {
+    color: red;
+    font-size: 1.04167vw;
+  }
 }
 
-.leftblack-button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.leftsmall-button {
-  font-size: 1.04167vw;
-  color: #F44336;
-  background: transparent;
-  border: none;
-  float: left;
-  padding-left: 0;
-  margin-top: 1.04167vw;
-}
-
-.leftsmall-button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.rightsmall-button {
-  font-size: 1.04167vw;
-  color: #F44336;
-  background: transparent;
-  border: none;
-  float: right;
-  margin-top: 1.04167vw;
-}
-
-.rightsmall-button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/*** ============ validation css ============ ***/
-.is-invalid {
-  color: red;
-  font-size: 1.04167vw;
+@media screen and (max-width: 768px) {
+  /*** Button Classes ***/
+  .leftblack-button {
+    font-size: 5.33333vw;
+    color: #424242;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 5.33333vw;
+    cursor: pointer;
+  }
+  .leftblack-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .leftsmall-button {
+    font-size: 5.33333vw;
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 5.33333vw;
+    cursor: pointer;
+  }
+  .leftsmall-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .rightsmall-button {
+    font-size: 5.33333vw;
+    color: #F44336;
+    background: transparent;
+    border: none;
+    float: right;
+    margin-top: 5.33333vw;
+    cursor: pointer;
+  }
+  .rightsmall-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  /*** ============ validation css ============ ***/
+  .is-invalid {
+    color: red;
+    font-size: 5.33333vw;
+  }
 }
 
 /********************
@@ -128,133 +183,324 @@ body {
 /********************
     Navigation Css
 ********************/
-.header-main {
-  width: 94%;
-  border-bottom: 1px solid #000;
+@media screen and (min-width: 769px) {
+  .header-main {
+    width: 94%;
+    border-bottom: 1px solid #000;
+  }
+  .header-main .divheading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-main img {
+    width: 10.41667vw;
+    height: 4.42708vw;
+  }
+  .header-main .header-anchor {
+    color: #000;
+    text-decoration: none;
+  }
+  .header-main .h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.08333vw;
+    color: #000000;
+  }
 }
 
-.header-main .divheading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header-main img {
-  width: 10.41667vw;
-  height: 4.42708vw;
-}
-
-.header-main .header-anchor {
-  color: #000;
-  text-decoration: none;
-}
-
-.header-main .h4 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.08333vw;
-  color: #000000;
+/***********************************
+            Media Query header           
+***********************************/
+@media screen and (max-width: 768px) {
+  .header-main {
+    width: 100%;
+    background-color: #000;
+    padding-left: 5.33333vw;
+    padding-right: 5.33333vw;
+    position: relative;
+    bottom: 0;
+  }
+  .header-main .divheading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-main img {
+    width: 26.66667vw;
+    height: 11.2vw;
+  }
+  .header-main .header-anchor {
+    color: #7FC7AF;
+    text-decoration: none;
+  }
+  .header-main h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.33333vw;
+  }
 }
 
 /***=========================
     Login Scss
 =========================***/
-.login-align {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+@media screen and (min-width: 769px) {
+  .login-align {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .login-align img {
+    margin-bottom: 3.90625vw;
+  }
+  .login-align .forgot-button {
+    color: #F44336;
+    font-size: 0.83333vw;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+  }
+  .login-align .forgot-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .login-align .login-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25vw;
+    border: none;
+    background-color: transparent;
+    padding-right: 0;
+    margin-top: 1.04167vw;
+    float: right;
+  }
+  .login-align .login-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
-.login-align img {
-  margin-bottom: 3.90625vw;
-}
-
-.login-align .forgot-button {
-  color: #F44336;
-  font-size: 0.83333vw;
-  border: none;
-  background-color: transparent;
-  padding-left: 0;
-}
-
-.login-align .forgot-button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.login-align .login-button {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.25vw;
-  border: none;
-  background-color: transparent;
-  padding-right: 0;
-  margin-top: 1.04167vw;
-  float: right;
-}
-
-.login-align .login-button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+/***********************************
+            Media Query Login       
+***********************************/
+@media screen and (max-width: 768px) {
+  .login-align {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .login-align img {
+    margin-bottom: 20vw;
+  }
+  .login-align .forgot-button {
+    color: #F44336;
+    font-size: 4.26667vw;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+  }
+  .login-align .forgot-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .login-align .login-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6.4vw;
+    border: none;
+    background-color: transparent;
+    padding-right: 0;
+    margin-top: 5.33333vw;
+    float: right;
+  }
+  .login-align .login-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 /*** ====================
     Dashboard Css
 ==================== ***/
-/*** ====== Large Text Css ====== ***/
-.large-text {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-  padding-left: 0;
-  margin-top: 1.04167vw;
-  height: 2.60417vw;
+@media screen and (min-width: 769px) {
+  /*** ====== Large Text Css ====== ***/
+  .large-text {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    padding-left: 0;
+    margin-top: 1.04167vw;
+    height: 2.60417vw;
+  }
+  .large-text h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.82292vw;
+    color: #F44336;
+    font-family: 'Roboto', sans-serif;
+  }
+  /*** ====== Small Text Css ====== ***/
+  table {
+    margin-bottom: 0px !important;
+  }
+  table .tabledata-bold {
+    padding-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.9375vw;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  }
+  table .tabledata-light {
+    padding-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375vw;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+  }
 }
 
-.large-text h4 {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.82292vw;
-  color: #F44336;
+@media screen and (max-width: 768px) {
+  /*** ====== Large Text Css ====== ***/
+  .large-text {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    padding-left: 0;
+    margin-top: 8vw;
+    height: 16vw;
+  }
+  .large-text h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.66667vw;
+    color: #F44336;
+    font-family: 'Roboto', sans-serif;
+  }
+  .large-text .mobile-text {
+    color: #000 !important;
+  }
+  /*** ====== Small Text Css ====== ***/
+  table {
+    margin-bottom: 0px !important;
+  }
+  table .tabledata-bold {
+    padding-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 6.66667vw;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  }
+  table .tabledata-light {
+    padding-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.8vw;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+  }
+  table .tabledata-red {
+    padding-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.73333vw;
+    color: #F44336;
+    border: none !important;
+    cursor: pointer;
+  }
 }
 
-/*** ====== Small Text Css ====== ***/
-table {
-  margin-bottom: 0px !important;
-}
-
-table .tabledata-bold {
-  padding-left: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 0.9375vw;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-}
-
-table .tabledata-light {
-  padding-left: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.9375vw;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-  cursor: pointer;
+/*** ======================
+    Dashboard Mobile Scss
+====================== ***/
+@media screen and (max-width: 768px) {
+  /***========= Post Login css ========***/
+  .mobile-postlogin {
+    min-height: 82vh;
+  }
+  .mobile-postlogin .mobile-div {
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  }
+  .mobile-postlogin .mobile-div .drop-down-btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mobile-postlogin input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mobile-postlogin .has-search .form-control {
+    padding-left: 2.375rem;
+    background: #FAFAFA;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    height: 3rem;
+    position: relative;
+  }
+  .mobile-postlogin .has-search .form-control-feedback {
+    position: absolute;
+    top: 5.8rem;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  .mobile-postlogin .has-search .form-control-feedbackone {
+    position: absolute;
+    right: 2rem;
+    top: 6.5rem;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  /***========= Post Login Add Organisation css ========***/
 }
 /*# sourceMappingURL=App.css.map */

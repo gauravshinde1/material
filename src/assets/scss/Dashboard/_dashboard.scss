@@ -1,48 +1,114 @@
 /*** ====================
     Dashboard Css
 ==================== ***/
+@media screen and (min-width: 769px) {
+    /*** ====== Large Text Css ====== ***/
+    .large-text{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+        padding-left: 0;
+        margin-top: vw(20px);
+        height: vw(50px);
 
-/*** ====== Large Text Css ====== ***/
-.large-text{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-    padding-left: 0;
-    margin-top: vw(20px);
-    height: vw(50px);
+        h4{
+            font-style: normal;
+            font-weight: 300;
+            font-size: vw(35px);
+            color: #F44336;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
 
-    h4{
-        font-style: normal;
-        font-weight: 300;
-        font-size: vw(35px);
-        color: #F44336;
+    /*** ====== Small Text Css ====== ***/
+    table{
+        
+        margin-bottom: 0px !important;
+
+        .tabledata-bold{
+            padding-left: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: vw(18px);
+            color: #000;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+            
+        }
+
+        .tabledata-light{
+            padding-left: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: vw(18px);
+            color: #000;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+            cursor: pointer;
+        }
     }
 }
 
-/*** ====== Small Text Css ====== ***/
-table{
-    
-    margin-bottom: 0px !important;
-
-    .tabledata-bold{
-        padding-left: 0;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: vw(18px);
-        color: #000;
-        border: none;
+@media screen and (max-width: 768px) {
+    /*** ====== Large Text Css ====== ***/
+    .large-text{
         border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-        
+        padding-left: 0;
+        margin-top: mvw(30px);
+        height: mvw(60px);
+
+        h4{
+            font-style: normal;
+            font-weight: 300;
+            font-size: mvw(40px);
+            color: #F44336;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .mobile-text{
+            color: #000 !important;
+        }
+
     }
 
-    .tabledata-light{
-        padding-left: 0;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: vw(18px);
-        color: #000;
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.54);
-        cursor: pointer;
+    /*** ====== Small Text Css ====== ***/
+    table{
+        
+        margin-bottom: 0px !important;
+
+        .tabledata-bold{
+            padding-left: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: mvw(25px);
+            color: #000;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+            
+        }
+
+        .tabledata-light{
+            padding-left: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: mvw(18px);
+            color: #000;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+            cursor: pointer;
+        }
+
+        .tabledata-red{
+            padding-left: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: mvw(14px);
+            color: #F44336;
+            border: none !important;
+            cursor: pointer;
+        }
     }
 }

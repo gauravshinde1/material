@@ -25,7 +25,7 @@ body{
 }
 /*** font family class ***/
 
-.text-robot{
+.text-roboto{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,48 +60,107 @@ body{
     box-shadow: none;
 }
 
-/*** Button Classes ***/
-.leftblack-button{
-    font-size: vw(20px);
-    color: #424242;
-    background: transparent;
-    border: none;
-    float: left;
-    padding-left: 0;
-    margin-top: vw(20px);
-}
-.leftblack-button:focus{
-    outline: none;
-    box-shadow: none;
-}
-.leftsmall-button{
-    font-size: vw(20px);
-    color: #F44336;
-    background: transparent;
-    border: none;
-    float: left;
-    padding-left: 0;
-    margin-top: vw(20px);
-}
-.leftsmall-button:focus{
-    outline: none;
-    box-shadow: none;
-}
-.rightsmall-button{
-    font-size: vw(20px);
-    color: #F44336;
-    background: transparent;
-    border: none;
-    float: right;
-    margin-top: vw(20px);
-}
-.rightsmall-button:focus{
-    outline: none;
-    box-shadow: none;
+/***===============
+    Button media
+===============***/
+@media screen and (min-width: 769px) {
+    /*** Button Classes ***/
+    .leftblack-button{
+        font-size: vw(20px);
+        color: #424242;
+        background: transparent;
+        border: none;
+        float: left;
+        padding-left: 0;
+        margin-top: vw(20px);
+        cursor: pointer;
+    }
+    .leftblack-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .leftsmall-button{
+        font-size: vw(20px);
+        color: #F44336;
+        background: transparent;
+        border: none;
+        float: left;
+        padding-left: 0;
+        margin-top: vw(20px);
+        cursor: pointer;
+    }
+    .leftsmall-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .rightsmall-button{
+        font-size: vw(20px);
+        color: #F44336;
+        background: transparent;
+        border: none;
+        float: right;
+        margin-top: vw(20px);
+        cursor: pointer;
+    }
+    .rightsmall-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    /*** ============ validation css ============ ***/
+    .is-invalid{
+        color: red;
+        font-size: vw(20px);
+    }
 }
 
-/*** ============ validation css ============ ***/
-.is-invalid{
-    color: red;
-    font-size: vw(20px);
+@media screen and (max-width: 768px) {
+    /*** Button Classes ***/
+    .leftblack-button{
+        font-size: mvw(20px);
+        color: #424242;
+        background: transparent;
+        border: none;
+        float: left;
+        padding-left: 0;
+        margin-top: mvw(20px);
+        cursor: pointer;
+    }
+    .leftblack-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .leftsmall-button{
+        font-size: mvw(20px);
+        color: #F44336;
+        background: transparent;
+        border: none;
+        float: left;
+        padding-left: 0;
+        margin-top: mvw(20px);
+        cursor: pointer;
+    }
+    .leftsmall-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .rightsmall-button{
+        font-size: mvw(20px);
+        color: #F44336;
+        background: transparent;
+        border: none;
+        float: right;
+        margin-top: mvw(20px);
+        cursor: pointer;
+    }
+    .rightsmall-button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    /*** ============ validation css ============ ***/
+    .is-invalid{
+        color: red;
+        font-size: mvw(20px);
+    }
 }

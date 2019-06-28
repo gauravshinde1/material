@@ -1,31 +1,70 @@
 /********************
     Navigation Css
 ********************/
-.header-main{
-    width: 94%;
-    border-bottom: 1px solid #000;
+@media screen and (min-width: 769px) {
+    .header-main{
+        width: 94%;
+        border-bottom: 1px solid #000;
 
-    .divheading{
-        display: flex;
-        height: 3rem;
-        align-items: center;
-        justify-content: space-between;
+        .divheading{
+            display: flex;
+            height: 3rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img{
+            width: vw(200px);
+            height: vw(85px);
+        }
+
+        .header-anchor{
+            color: #000;
+            text-decoration: none;
+        }
+
+        .h4{
+            font-style: normal;
+            font-weight: normal;
+            font-size: vw(40px);
+            color: #000000;
+        }
     }
+}
 
-    img{
-        width: vw(200px);
-        height: vw(85px);
-    }
+/***********************************
+            Media Query header           
+***********************************/
+@media screen and (max-width: 768px) {
+    .header-main{
+        width: 100%;
+        background-color: #000;
+        padding-left: mvw(20px);
+        padding-right: mvw(20px);
+        position: relative;
+        bottom: 0;
+    
+        .divheading{
+            display: flex;
+            height: 3rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        img{
+            width: mvw(100px);
+            height: mvw(42px);
+        }
+    
+        .header-anchor{
+            color: #7FC7AF;
+            text-decoration: none;
+        }
 
-    .header-anchor{
-        color: #000;
-        text-decoration: none;
-    }
-
-    .h4{
-        font-style: normal;
-        font-weight: normal;
-        font-size: vw(40px);
-        color: #000000;
+        h4{
+            font-style: normal;
+            font-weight: normal;
+            font-size: mvw(20px);
+        }
     }
 }

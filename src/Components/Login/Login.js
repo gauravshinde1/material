@@ -8,10 +8,10 @@ export class Login extends Component {
         return (
             <React.Fragment>
                 <div className="container">
-                    <div class="row">
-                        <div className="col-4 login-align">
+                    <div className="row">
+                        <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 login-align">
                             <form >
-                                <img src={Logo} class="img-fluid" alt="Materiely Logo" />
+                                <img src={Logo} className="img-fluid" alt="Materiely Logo" />
                                 <InputComponent name={'email'} type={"email"} place={"email address"} inputclass={ 'form-control input-bottomblack' }/>
                                 <InputComponent name={'password'} type={"password"} place={"password"} inputclass={ 'form-control input-bottomblack' }/>
                                 <div className="col p-0">

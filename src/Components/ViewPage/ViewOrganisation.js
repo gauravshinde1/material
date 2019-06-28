@@ -3,13 +3,14 @@ import HeaderComponent from '../Header/HeaderComponent';
 import EditView from './InsidePage/EditView';
 import MaterialView from './InsidePage/MaterialView';
 import BillingView from './InsidePage/BillingView';
+import DashboardLogo from '../../assets/images/logo.png';
 
 const ViewOrganisation = () => {
     return (
         <React.Fragment>
             <div className="container-fluid">
                 <div className="row">
-                    <HeaderComponent headertext={'Curtis'}/>
+                    <HeaderComponent linkopen={'/dashboard'} DashboardLogo={DashboardLogo} headertext={'Curtis'}/>
                 </div>
             </div>
             <div className="container-fluid main-padding">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import LargeText from '../../SmallComponent/LargeText';
 import SmallMain from '../../SmallComponent/SmallMain';
 import InputComponent from '../../SmallComponent/InputComponent';
@@ -66,16 +67,16 @@ export class AllDashComponent extends Component {
                             <SmallMain organisationname={'Billing'} tabledata={ 'tabledata-bold pt-5' }/>
                             <InputComponent name={'fees'} type={"text"} place={"Deployment Fees"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
                             <InputComponent name={'cost'} type={"text"} place={"Per User Cost"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
-                             <InputComponent name={'users'} type={"text"} place={"Minimum Number of Users"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
-                             <InputComponent name={'billingdate'} type={"date"} place={"Next Billing Date"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
-                             <div className="col p-0">
-                                 <Buttoncomponent buttontype={'button'} onClick={this.onSubmitHandler} buttonclass={'text-roboto rightsmall-button'} buttontext={'Add Account'} />
-                             </div>
-                         </form>                        
-                     </div>
-                     <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <InputComponent name={'users'} type={"text"} place={"Minimum Number of Users"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
+                            <InputComponent name={'billingdate'} type={"date"} place={"Next Billing Date"} inputclass={ 'form-control input-bottomblack' } onChange={this.onChangeHandler}/>
+                            <div className="col p-0">
+                                <Buttoncomponent buttontype={'button'} onClick={this.onSubmitHandler} buttonclass={'text-roboto rightsmall-button'} buttontext={'Add Account'} />
+                            </div>
+                        </form>                        
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                          <LargeText/>
-                     </div>
+                    </div>
                      <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                          <LargeText largetext={'Onboarded Organisations'}/>
                          <SmallMain organisationname={'Organisation Name'} totaluser={'Number of users'} tabledata={ 'tabledata-bold' } activestatus={'Active Since'} />

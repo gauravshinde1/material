@@ -1,41 +1,87 @@
 /***=========================
     Login Scss
 =========================***/
-.login-align{
-    align-items: center;
-    height: 100vh;
-    display: flex;
-    margin: auto;
+@media screen and (min-width: 769px) {
+    .login-align{
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        margin: auto;
 
-    img{
-        margin-bottom: vw(75px);
-    }
+        img{
+            margin-bottom: vw(75px);
+        }
 
-    .forgot-button{
-        color: #F44336;
-        font-size: vw(16px);
-        border: none;
-        background-color: transparent;
-        padding-left: 0;
-    }
+        .forgot-button{
+            color: #F44336;
+            font-size: vw(16px);
+            border: none;
+            background-color: transparent;
+            padding-left: 0;
+        }
 
-    .forgot-button:focus{
-        outline: none;
-        box-shadow: none;
-    }
+        .forgot-button:focus{
+            outline: none;
+            box-shadow: none;
+        }
 
-    .login-button{
-        font-style: normal;
-        font-weight: normal;
-        font-size: vw(24px);
-        border: none;
-        background-color: transparent;
-        padding-right: 0;
-        margin-top: vw(20px);
-        float: right;
+        .login-button{
+            font-style: normal;
+            font-weight: normal;
+            font-size: vw(24px);
+            border: none;
+            background-color: transparent;
+            padding-right: 0;
+            margin-top: vw(20px);
+            float: right;
+        }
+        .login-button:focus{
+            outline: none;
+            box-shadow: none;
+        }
     }
-    .login-button:focus{
-        outline: none;
-        box-shadow: none;
+}
+
+/***********************************
+            Media Query Login       
+***********************************/
+@media screen and (max-width: 768px) {
+    .login-align{
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        margin: auto;
+
+        img{
+            margin-bottom: mvw(75px);
+        }
+
+        .forgot-button{
+            color: #F44336;
+            font-size: mvw(16px);
+            border: none;
+            background-color: transparent;
+            padding-left: 0;
+        }
+
+        .forgot-button:focus{
+            outline: none;
+            box-shadow: none;
+        }
+
+        .login-button{
+            font-style: normal;
+            font-weight: normal;
+            font-size: mvw(24px);
+            border: none;
+            background-color: transparent;
+            padding-right: 0;
+            margin-top: mvw(20px);
+            float: right;
+        }
+        .login-button:focus{
+            outline: none;
+            box-shadow: none;
+        }
     }
 }
